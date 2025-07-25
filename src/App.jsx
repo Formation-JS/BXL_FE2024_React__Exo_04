@@ -3,7 +3,8 @@ import ContactForm from './components/contact-form/contact-form';
 import CurrencyConvert from './components/currency-convert/currency-convert';
 import PalindromeMot from './components/palindrome/palindrome-v1';
 import PalindromePhrase from './components/palindrome/palindrome-v2';
-import SuperficieCalculatorV1 from './components/superficie-calculator/superficie-calculator';
+import SuperficieCalculatorV1 from './components/superficie-calculator/superficie-calculator-v1';
+import SuperficieCalculatorV2 from './components/superficie-calculator/superficie-calculator-v2';
 
 function App() {
 
@@ -21,8 +22,11 @@ function App() {
       {/* <h2>Exo 03</h2>
       <CurrencyConvert /> */}
 
-      <h2>Exo 04</h2>
-      <ContactForm />
+      {/* <h2>Exo 04</h2>
+      <ContactForm /> */}
+
+      <h2>Exo 05</h2>
+      <SuperficieCalculatorV2 />
     </>
   )
 }
