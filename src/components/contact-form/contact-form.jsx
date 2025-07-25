@@ -18,7 +18,6 @@ async function contactAction(prevState, formData) {
     const contentFormData = Object.fromEntries(formData.entries());
     const { data, error, success } = z.safeParse(contactSchemaValidation, contentFormData);
 
-    console.log(data);
     if (!success) {
         return {
             message: 'Erreur dans le formulaire !',
@@ -81,7 +80,7 @@ export default function ContactForm() {
                 {state.error.condition && <span>{state.error.condition.errors.join(', ')}</span>}
             </div>
             <div>
-                <button type="submit">Envoyer</button>
+                <button type="submit" disabled={isPending}>Envoyer</button>
                 {' '}
                 {state.message && <span>{state.message}</span>}
             </div>
